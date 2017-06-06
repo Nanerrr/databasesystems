@@ -10,7 +10,7 @@ $retrieve_agents = mysqli_query($mysqli, "SELECT * FROM agent");
 <body>
 <a href="add_agent.html">Add an Agent</a>
 
-	<table width='80%' border=0>
+	<table width='80%' border=2>
 
 	<tr bgcolor='#CCCCCC'>
 		<td>ID</td>
