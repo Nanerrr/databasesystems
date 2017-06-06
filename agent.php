@@ -33,7 +33,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM agent");
 		echo "<td>".$res['auto_insur_sold']."</td>";
 		echo "<td>".$res['home_insur_sold']."</td>";
 		echo "<td>".$res['life_insur_sold']."</td>";
-		echo "<td><a href=\"delete_agent.php?agent_id=$res[agent_id]\" onClick=\"return confirm('Are you sure you want to delete this agent?')\">Delete</a></td>";
+		echo "<td><a href=\"delete_agent.php?agent_id=$res[agent_id]\" onClick=\"return confirm('Do you want to delete this agent?')\">Delete</a></td>";
 	}
 	?>
 	</table>
