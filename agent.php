@@ -23,16 +23,16 @@ $result = mysqli_query($mysqli, "SELECT * FROM agent");
 		<td>Life Insurance Sold</td>
 	</tr>
 	<?php
-	while($result = mysqli_fetch_array($result)) {
+	while($res = mysqli_fetch_array($result)) {
 		echo "<tr>";
-		echo "<td>".$result['agent_id']."</td>";
-		echo "<td>".$result['name']."</td>";
-		echo "<td>".$result['total_auto_prem']."</td>";
-		echo "<td>".$result['total_home_prem']."</td>";
-		echo "<td>".$result['total_life_prem']."</td>";
-		echo "<td>".$result['auto_insur_sold']."</td>";
-		echo "<td>".$result['home_insur_sold']."</td>";
-		echo "<td>".$result['life_insur_sold']."</td>";
+		echo "<td>".$res['agent_id']."</td>";
+		echo "<td>".$res['name']."</td>";
+		echo "<td>".$res['total_auto_prem']."</td>";
+		echo "<td>".$res['total_home_prem']."</td>";
+		echo "<td>".$res['total_life_prem']."</td>";
+		echo "<td>".$res['auto_insur_sold']."</td>";
+		echo "<td>".$res['home_insur_sold']."</td>";
+		echo "<td>".$res['life_insur_sold']."</td>";
 		echo "<td><a href=\"delete_agent.php?agent_id=$res[agent_id]\" onClick=\"return confirm('Are you sure you want to delete this agent?')\">Delete</a></td>";
 	}
 	?>
