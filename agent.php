@@ -10,6 +10,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM agent");
 
 <html>
 <body>
+	<h1>Agent Table</h1>
 	<table width='80%' border=2>
 
 	<tr bgcolor='#CCCCCC'>
