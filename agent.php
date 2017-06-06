@@ -39,6 +39,6 @@ $retrieve_agents = mysqli_query($mysqli, "SELECT * FROM agent");
 	</table>
 	
 	<br>
-	<a href="add_agent.html"><button>Add an Agent</button></a>
+	<a href="add_agent.html"><button><b>Add an Agent</b></button></a>
 </body>
 </html>
