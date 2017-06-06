@@ -8,8 +8,6 @@ $retrieve_agents = mysqli_query($mysqli, "SELECT * FROM agent");
 
 <html>
 <body>
-<a href="add_agent.html">Add an Agent</a>
-
 	<table width='80%' border=2>
 
 	<tr bgcolor='#CCCCCC'>
@@ -37,5 +35,6 @@ $retrieve_agents = mysqli_query($mysqli, "SELECT * FROM agent");
 	}
 	?>
 	</table>
+<B href="add_agent.html"><button>Add an Agent</button></a>
 </body>
 </html>
