@@ -1,6 +1,5 @@
-<ul>
-  <li><a href="http://webtech.kettering.edu/~zhao8671/databasesystems/homepage.php">Main Page</a></li>
-</ul>
+<a href="http://webtech.kettering.edu/~zhao8671/databasesystems/homepage.php">Main Page</a>
+
 <?php
 include_once("config.php");
 $retrieve_agents = mysqli_query($mysqli, "SELECT * FROM agent");
