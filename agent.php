@@ -1,4 +1,4 @@
-<a href="http://webtech.kettering.edu/~zhao8671/databasesystems/homepage.php">Main Page</a>
+<div> <a href="http://webtech.kettering.edu/~zhao8671/databasesystems/homepage.php">Main Page</a></div>
 
 <?php
 include_once("config.php");
