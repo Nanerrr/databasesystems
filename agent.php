@@ -5,7 +5,7 @@
 
 <?php
 include_once("config.php");
-$retrieve_agents = mysqli_query($mysqli, "SELECT * FROM agent");
+$result = mysqli_query($mysqli, "SELECT * FROM agent");
 ?>
 
 <html>
@@ -23,7 +23,7 @@ $retrieve_agents = mysqli_query($mysqli, "SELECT * FROM agent");
 		<td>Life Insurance Sold</td>
 	</tr>
 	<?php
-	while($result = mysqli_fetch_array($retrieve_agents)) {
+	while($result = mysqli_fetch_array($result)) {
 		echo "<tr>";
 		echo "<td>".$result['agent_id']."</td>";
 		echo "<td>".$result['name']."</td>";
@@ -33,7 +33,7 @@ $retrieve_agents = mysqli_query($mysqli, "SELECT * FROM agent");
 		echo "<td>".$result['auto_insur_sold']."</td>";
 		echo "<td>".$result['home_insur_sold']."</td>";
 		echo "<td>".$result['life_insur_sold']."</td>";
-		echo "<td><a href=\"delete_agent.php?agent_id=$res[agent_id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+		echo "<td><a href=\"delete_agent.php?agent_id=$res[agent_id]\" onClick=\"return confirm('Are you sure you want to delete this agent?')\">Delete</a></td>";
 	}
 	?>
 	</table>
