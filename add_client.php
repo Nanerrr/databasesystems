@@ -7,6 +7,7 @@ if(isset($_POST['Submit'])) {
 	//list of parameters
 	$ssn = mysqli_real_escape_string($mysqli, $_POST['ssn']);
 	$sex = mysqli_real_escape_string($mysqli, $_POST['sex']);
+	$name = mysqli_real_escape_string($mysqli, $_POST['name']);
 	$num_of_children = mysqli_real_escape_string($mysqli, $_POST['num_of_children']);
 	$martial_status = mysqli_real_escape_string($mysqli, $_POST['martial_status']);
 	$height = mysqli_real_escape_string($mysqli, $_POST['height']);
@@ -18,8 +19,7 @@ if(isset($_POST['Submit'])) {
 	$phone = mysqli_real_escape_string($mysqli, $_POST['phone']);
 		
 	//insert client to database	
-	$result = mysqli_query($mysqli, "INSERT INTO client(ssn, sex, num_of_children, martial_status, height, weight, date_of_birth, current_address, current_employer, policy_id, phone) 
-	VALUES('$ssn', '$sex', '$num_of_children', '$martial_status', '$height', '$weight', '$date_of_birth', '$current_address', '$current_employer', '$policy_id', '$phone')");
+	$result = mysqli_query($mysqli, "INSERT INTO client(ssn, sex, name, num_of_children, martial_status, height, weight, date_of_birth, current_address, current_employer, policy_id, phone) VALUES('$ssn', '$sex', '$name', '$num_of_children', '$martial_status', '$height', '$weight', '$date_of_birth', '$current_address', '$current_employer', '$policy_id', '$phone')");
 		
 	//display success insert message
 	echo "<font color='green'>Client added successfully.";
