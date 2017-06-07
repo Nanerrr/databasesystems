@@ -1,3 +1,4 @@
+<h1>Insurance Agency Database</h1>
 <a href="http://webtech.kettering.edu/~zhao8671/databasesystems/homepage.php">Main Page</a>
 <ol>
   <li><a href="http://webtech.kettering.edu/~zhao8671/databasesystems/agent.php">Agent</a></li>
