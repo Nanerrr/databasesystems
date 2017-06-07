@@ -19,8 +19,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM premium_invoice");
 		<td>Address</td>
 		<td>Date Due</td>
 		<td>Amount Due</td>
-		<td>Policy ID</td>
-		<td>Agent ID</td>
 	</tr>
 	<?php
 	while($res = mysqli_fetch_array($result)) {
@@ -30,8 +28,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM premium_invoice");
 		echo "<td>".$res['address']."</td>";
 		echo "<td>".$res['date_due']."</td>";
 		echo "<td>".$res['amount_due']."</td>";
-		echo "<td>".$res['policy_id']."</td>";
-		echo "<td>".$res['agent_id']."</td>";
 		echo "<td><a href=\"delete_agent.php?invoice_id=$res[invoice_id]\" onClick=\"return confirm('Do you want to delete this invoice?')\">Delete</a></td>";
 	}
 	?>
