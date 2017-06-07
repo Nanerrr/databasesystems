@@ -12,7 +12,8 @@ if(isset($_POST['Submit'])) {
 	$amount_due = mysqli_real_escape_string($mysqli, $_POST['amount_due']);
 		
 	//insert invoice to database	
-	$result = mysqli_query($mysqli, "INSERT INTO premium_invoice (invoice_id, insured_name, address, date_due, amount_due) VALUES('$invoice_id', '$insured_name', '$address', '$date_due', '$amount_due');
+	$result = mysqli_query($mysqli, "INSERT INTO premium_invoice (invoice_id, insured_name, address, date_due, amount_due) VALUES('$invoice_id', '$insured_name', '$address', '$date_due', '$amount_due'");
+		
 		
 	//display success insert message
 	echo "<font color='green'>Premium invoice added successfully.";
