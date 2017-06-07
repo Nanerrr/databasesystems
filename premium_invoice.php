@@ -15,7 +15,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM premium_invoice");
 
 	<tr bgcolor='#CCCCCC'>
 		<td>Invoice ID</td>
-		<td>Insured Name</td>
+		<td>Name</td>
 		<td>Address</td>
 		<td>Date Due</td>
 		<td>Amount Due</td>
@@ -24,7 +24,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM premium_invoice");
 	while($res = mysqli_fetch_array($result)) {
 		echo "<tr>";
 		echo "<td>".$res['invoice_id']."</td>";
-		echo "<td>".$res['insured_name']."</td>";
+		echo "<td>".$res['name']."</td>";
 		echo "<td>".$res['address']."</td>";
 		echo "<td>".$res['date_due']."</td>";
 		echo "<td>".$res['amount_due']."</td>";
