@@ -28,7 +28,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM premium_invoice");
 		echo "<td>".$res['address']."</td>";
 		echo "<td>".$res['date_due']."</td>";
 		echo "<td>".$res['amount_due']."</td>";
-		echo "<td><a href=\"delete_agent.php?invoice_id=$res[invoice_id]\" onClick=\"return confirm('Do you want to delete this invoice?')\">Delete</a></td>";
+		echo "<td><a href=\"delete_premium_invoice.php?invoice_id=$res[invoice_id]\" onClick=\"return confirm('Do you want to delete this invoice?')\">Delete</a></td>";
 	}
 	?>
 	</table>
